@@ -6,7 +6,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buffer);
+  response.send(infile);
 });
 
 var port = process.env.PORT || 5000;
