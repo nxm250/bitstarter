@@ -1,3 +1,5 @@
+
+
 var fs = require('fs');
 var express = require('express');
 var htmlfile = "index.html";
@@ -6,7 +8,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
- var html=fs.readFileSync(htmlfile).toString();  
+ var html=fs.readFileSync(htmlfile).toString();
 response.send(html);
 });
 
